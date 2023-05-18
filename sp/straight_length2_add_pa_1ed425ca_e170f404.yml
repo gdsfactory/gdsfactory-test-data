@@ -1,0 +1,289 @@
+resolution: 20
+port_symmetries: {}
+wavelength_start: 1.5
+wavelength_stop: 1.6
+wavelength_points: 50
+port_margin: 2
+port_monitor_offset: -0.1
+port_source_offset: -0.1
+dispersive: false
+ymargin_top: 3
+ymargin_bot: 3
+xmargin_left: 0
+xmargin_right: 0
+is_3d: false
+layer_stack:
+  substrate:
+    layer:
+    - 0
+    - 0
+    thickness: 10.0
+    thickness_tolerance: null
+    zmin: -13.0
+    material: si
+    sidewall_angle: 0.0
+    width_to_z: 0.0
+    z_to_bias: null
+    info:
+      mesh_order: 99
+  box:
+    layer:
+    - 0
+    - 0
+    thickness: 3.0
+    thickness_tolerance: null
+    zmin: -3.0
+    material: sio2
+    sidewall_angle: 0.0
+    width_to_z: 0.0
+    z_to_bias: null
+    info:
+      mesh_order: 99
+  core:
+    layer:
+    - 1
+    - 0
+    thickness: 0.22
+    thickness_tolerance: null
+    zmin: 0.0
+    material: si
+    sidewall_angle: 10.0
+    width_to_z: 0.5
+    z_to_bias: null
+    info:
+      mesh_order: 1
+  clad:
+    layer:
+    - 0
+    - 0
+    thickness: 3.0
+    thickness_tolerance: null
+    zmin: 0.0
+    material: sio2
+    sidewall_angle: 0.0
+    width_to_z: 0.0
+    z_to_bias: null
+    info:
+      mesh_order: 10
+  slab150:
+    layer:
+    - 2
+    - 0
+    thickness: 0.15
+    thickness_tolerance: null
+    zmin: 0.0
+    material: si
+    sidewall_angle: 0.0
+    width_to_z: 0.0
+    z_to_bias: null
+    info:
+      mesh_order: 3
+  slab90:
+    layer:
+    - 3
+    - 0
+    thickness: 0.09
+    thickness_tolerance: null
+    zmin: 0.0
+    material: si
+    sidewall_angle: 0.0
+    width_to_z: 0.0
+    z_to_bias: null
+    info:
+      mesh_order: 2
+  nitride:
+    layer:
+    - 34
+    - 0
+    thickness: 0.35000000000000003
+    thickness_tolerance: null
+    zmin: 0.32
+    material: sin
+    sidewall_angle: 0.0
+    width_to_z: 0.0
+    z_to_bias: null
+    info:
+      mesh_order: 2
+  ge:
+    layer:
+    - 5
+    - 0
+    thickness: 0.5
+    thickness_tolerance: null
+    zmin: 0.22
+    material: ge
+    sidewall_angle: 0.0
+    width_to_z: 0.0
+    z_to_bias: null
+    info:
+      mesh_order: 1
+  undercut:
+    layer:
+    - 6
+    - 0
+    thickness: -5.0
+    thickness_tolerance: null
+    zmin: -3.0
+    material: air
+    sidewall_angle: 0.0
+    width_to_z: 0.0
+    z_to_bias:
+    - - 0.0
+      - 0.3
+      - 0.6
+      - 0.8
+      - 0.9
+      - 1.0
+    - - 0.0
+      - -0.5
+      - -1.0
+      - -1.5
+      - -2.0
+      - -2.5
+    info:
+      mesh_order: 1
+  via_contact:
+    layer:
+    - 40
+    - 0
+    thickness: 1.01
+    thickness_tolerance: null
+    zmin: 0.09
+    material: Aluminum
+    sidewall_angle: -10.0
+    width_to_z: 0.0
+    z_to_bias: null
+    info:
+      mesh_order: 1
+  metal1:
+    layer:
+    - 41
+    - 0
+    thickness: 0.7000000000000001
+    thickness_tolerance: null
+    zmin: 1.1
+    material: Aluminum
+    sidewall_angle: 0.0
+    width_to_z: 0.0
+    z_to_bias: null
+    info:
+      mesh_order: 2
+  heater:
+    layer:
+    - 47
+    - 0
+    thickness: 0.75
+    thickness_tolerance: null
+    zmin: 1.1
+    material: TiN
+    sidewall_angle: 0.0
+    width_to_z: 0.0
+    z_to_bias: null
+    info:
+      mesh_order: 1
+  via1:
+    layer:
+    - 44
+    - 0
+    thickness: 0.49999999999999956
+    thickness_tolerance: null
+    zmin: 1.8000000000000003
+    material: Aluminum
+    sidewall_angle: 0.0
+    width_to_z: 0.0
+    z_to_bias: null
+    info:
+      mesh_order: 2
+  metal2:
+    layer:
+    - 45
+    - 0
+    thickness: 0.7000000000000001
+    thickness_tolerance: null
+    zmin: 2.3
+    material: Aluminum
+    sidewall_angle: 0.0
+    width_to_z: 0.0
+    z_to_bias: null
+    info:
+      mesh_order: 2
+  via2:
+    layer:
+    - 43
+    - 0
+    thickness: 0.20000000000000018
+    thickness_tolerance: null
+    zmin: 3.0
+    material: Aluminum
+    sidewall_angle: 0.0
+    width_to_z: 0.0
+    z_to_bias: null
+    info:
+      mesh_order: 1
+  metal3:
+    layer:
+    - 49
+    - 0
+    thickness: 2.0
+    thickness_tolerance: null
+    zmin: 3.2
+    material: Aluminum
+    sidewall_angle: 0.0
+    width_to_z: 0.0
+    z_to_bias: null
+    info:
+      mesh_order: 2
+component:
+  name: straight_length2_add_pa_1ed425ca
+  settings:
+    name: straight_length2_add_pa_1ed425ca
+    module: gdsfactory.add_padding
+    function_name: add_padding_container
+    info:
+      length: 2.0
+      width: 0.5
+    info_version: 2
+    full:
+      layers:
+      - PADDING
+      component:
+        component: straight
+        settings:
+          length: 2
+      default: 0
+      top: 3
+      bottom: 3
+    changed:
+      bottom: 3
+      component:
+        component: straight
+        settings:
+          length: 2
+      default: 0
+      top: 3
+    default:
+      layers:
+      - PADDING
+    child:
+      name: straight_length2
+      module: gdsfactory.components.straight
+      function_name: straight
+      info:
+        length: 2.0
+        width: 0.5
+      info_version: 2
+      full:
+        length: 2
+        npoints: 2
+        with_bbox: true
+        cross_section: strip
+      changed:
+        length: 2
+      default:
+        length: 10.0
+        npoints: 2
+        with_bbox: true
+        cross_section: strip
+      child: null
+compute_time_seconds: 3.661684989929199
+compute_time_minutes: 0.061028083165486656

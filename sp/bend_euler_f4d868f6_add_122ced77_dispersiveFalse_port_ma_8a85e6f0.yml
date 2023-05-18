@@ -1,0 +1,258 @@
+resolution: 20
+port_symmetries: {}
+wl_min: 1.5
+wl_max: 1.6
+wl_steps: 50
+port_margin: 2
+port_monitor_offset: -0.1
+port_source_offset: -0.1
+dispersive: false
+layer_stack:
+  core:
+    layer:
+    - 1
+    - 0
+    thickness: 0.22
+    zmin: 0.0
+    material: si
+    sidewall_angle: 0.0
+  clad:
+    layer:
+    - 111
+    - 0
+    thickness: null
+    zmin: 0.0
+    material: sio2
+    sidewall_angle: 0.0
+  slab150:
+    layer:
+    - 2
+    - 0
+    thickness: 0.15
+    zmin: 0.0
+    material: si
+    sidewall_angle: 0.0
+  slab90:
+    layer:
+    - 3
+    - 0
+    thickness: 0.15
+    zmin: 0.0
+    material: si
+    sidewall_angle: 0.0
+  nitride:
+    layer:
+    - 34
+    - 0
+    thickness: 0.35
+    zmin: 0.32
+    material: sin
+    sidewall_angle: 0.0
+  ge:
+    layer:
+    - 5
+    - 0
+    thickness: 0.5
+    zmin: 0.22
+    material: ge
+    sidewall_angle: 0.0
+  via_contact:
+    layer:
+    - 40
+    - 0
+    thickness: 1.1
+    zmin: 0.09
+    material: Aluminum
+    sidewall_angle: 0.0
+  metal1:
+    layer:
+    - 41
+    - 0
+    thickness: 0.75
+    zmin: 1.32
+    material: Aluminum
+    sidewall_angle: 0.0
+  heater:
+    layer:
+    - 47
+    - 0
+    thickness: 0.75
+    zmin: 1.32
+    material: TiN
+    sidewall_angle: 0.0
+  viac:
+    layer:
+    - 44
+    - 0
+    thickness: 1.5
+    zmin: 2.0700000000000003
+    material: Aluminum
+    sidewall_angle: 0.0
+  metal2:
+    layer:
+    - 45
+    - 0
+    thickness: 2.0
+    zmin: 3.5700000000000003
+    material: Aluminum
+    sidewall_angle: 0.0
+component:
+  ports:
+    o1:
+      name: o1
+      midpoint:
+      - 0
+      - 0
+      width: 0.5
+      orientation: 180
+      layer:
+      - 1
+      - 0
+      port_type: optical
+    o2:
+      name: o2
+      midpoint:
+      - 3
+      - 3
+      width: 0.5
+      orientation: 90
+      layer:
+      - 1
+      - 0
+      port_type: optical
+  info:
+    child:
+      length: 4.991
+      dy: 3
+      radius_min: 2.118
+      radius: 3
+      name: bend_euler_f4d868f6
+      module: gdsfactory.components.bend_euler
+      function_name: bend_euler
+      info_version: 1
+      changed:
+        radius: 3
+      default:
+        angle: 90
+        p: 0.5
+        with_arc_floorplan: true
+        npoints: 720
+        direction: ccw
+        with_cladding_box: true
+        cross_section:
+          function: cross_section
+      full:
+        angle: 90
+        p: 0.5
+        with_arc_floorplan: true
+        npoints: 720
+        direction: ccw
+        with_cladding_box: true
+        cross_section:
+          function: cross_section
+        radius: 3
+    name: bend_euler_f4d868f6_add_122ced77
+    module: gdsfactory.add_padding
+    function_name: add_padding_container
+    info_version: 1
+    changed:
+      component: bend_euler_f4d868f6
+      default: 0
+      bottom: 2
+      right: 2
+    default:
+      layers:
+      - - 67
+        - 0
+    full:
+      layers:
+      - - 67
+        - 0
+      component: bend_euler_f4d868f6
+      default: 0
+      bottom: 2
+      right: 2
+  cells:
+    bend_euler_f4d868f6_add_122ced77:
+      child:
+        length: 4.991
+        dy: 3
+        radius_min: 2.118
+        radius: 3
+        name: bend_euler_f4d868f6
+        module: gdsfactory.components.bend_euler
+        function_name: bend_euler
+        info_version: 1
+        changed:
+          radius: 3
+        default:
+          angle: 90
+          p: 0.5
+          with_arc_floorplan: true
+          npoints: 720
+          direction: ccw
+          with_cladding_box: true
+          cross_section:
+            function: cross_section
+        full:
+          angle: 90
+          p: 0.5
+          with_arc_floorplan: true
+          npoints: 720
+          direction: ccw
+          with_cladding_box: true
+          cross_section:
+            function: cross_section
+          radius: 3
+      name: bend_euler_f4d868f6_add_122ced77
+      module: gdsfactory.add_padding
+      function_name: add_padding_container
+      info_version: 1
+      changed:
+        component: bend_euler_f4d868f6
+        default: 0
+        bottom: 2
+        right: 2
+      default:
+        layers:
+        - - 67
+          - 0
+      full:
+        layers:
+        - - 67
+          - 0
+        component: bend_euler_f4d868f6
+        default: 0
+        bottom: 2
+        right: 2
+    bend_euler_f4d868f6:
+      length: 4.991
+      dy: 3
+      radius_min: 2.118
+      radius: 3
+      name: bend_euler_f4d868f6
+      module: gdsfactory.components.bend_euler
+      function_name: bend_euler
+      info_version: 1
+      changed:
+        radius: 3
+      default:
+        angle: 90
+        p: 0.5
+        with_arc_floorplan: true
+        npoints: 720
+        direction: ccw
+        with_cladding_box: true
+        cross_section:
+          function: cross_section
+      full:
+        angle: 90
+        p: 0.5
+        with_arc_floorplan: true
+        npoints: 720
+        direction: ccw
+        with_cladding_box: true
+        cross_section:
+          function: cross_section
+        radius: 3
+  version: 0.0.1

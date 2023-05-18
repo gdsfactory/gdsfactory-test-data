@@ -1,0 +1,236 @@
+resolution: 20
+port_symmetries:
+  o1:
+    s11:
+    - s22
+    s21:
+    - s12
+wl_min: 1.5
+wl_max: 1.6
+wl_steps: 50
+port_margin: 2
+port_monitor_offset: -0.1
+port_source_offset: -0.1
+dispersive: false
+layer_stack:
+  core:
+    layer:
+    - 1
+    - 0
+    thickness: 0.22
+    zmin: 0.0
+    material: si
+    sidewall_angle: 0.0
+  clad:
+    layer:
+    - 111
+    - 0
+    thickness: null
+    zmin: 0.0
+    material: sio2
+    sidewall_angle: 0.0
+  slab150:
+    layer:
+    - 2
+    - 0
+    thickness: 0.15
+    zmin: 0.0
+    material: si
+    sidewall_angle: 0.0
+  slab90:
+    layer:
+    - 3
+    - 0
+    thickness: 0.15
+    zmin: 0.0
+    material: si
+    sidewall_angle: 0.0
+  nitride:
+    layer:
+    - 34
+    - 0
+    thickness: 0.35
+    zmin: 0.32
+    material: sin
+    sidewall_angle: 0.0
+  ge:
+    layer:
+    - 5
+    - 0
+    thickness: 0.5
+    zmin: 0.22
+    material: ge
+    sidewall_angle: 0.0
+  via_contact:
+    layer:
+    - 40
+    - 0
+    thickness: 1.1
+    zmin: 0.09
+    material: Aluminum
+    sidewall_angle: 0.0
+  metal1:
+    layer:
+    - 41
+    - 0
+    thickness: 0.75
+    zmin: 1.32
+    material: Aluminum
+    sidewall_angle: 0.0
+  heater:
+    layer:
+    - 47
+    - 0
+    thickness: 0.75
+    zmin: 1.32
+    material: TiN
+    sidewall_angle: 0.0
+  viac:
+    layer:
+    - 44
+    - 0
+    thickness: 1.5
+    zmin: 2.0700000000000003
+    material: Aluminum
+    sidewall_angle: 0.0
+  metal2:
+    layer:
+    - 45
+    - 0
+    thickness: 2.0
+    zmin: 3.5700000000000003
+    material: Aluminum
+    sidewall_angle: 0.0
+component:
+  ports:
+    o1:
+      name: o1
+      midpoint:
+      - 0
+      - 0
+      width: 0.5
+      orientation: 180
+      layer:
+      - 1
+      - 0
+      port_type: optical
+    o2:
+      name: o2
+      midpoint:
+      - 2
+      - 0
+      width: 0.5
+      orientation: 0
+      layer:
+      - 1
+      - 0
+      port_type: optical
+  info:
+    child:
+      length: 2
+      width: 0.5
+      name: straight_fba69bc3
+      module: gdsfactory.components.straight
+      function_name: straight
+      info_version: 1
+      changed:
+        length: 2
+      default:
+        length: 10
+        npoints: 2
+        with_cladding_box: true
+        cross_section:
+          function: cross_section
+      full:
+        length: 2
+        npoints: 2
+        with_cladding_box: true
+        cross_section:
+          function: cross_section
+    name: straight_fba69bc3_add_p_9369b7ba
+    module: gdsfactory.add_padding
+    function_name: add_padding_container
+    info_version: 1
+    changed:
+      component: straight_fba69bc3
+      default: 0
+      top: 3
+      bottom: 3
+    default:
+      layers:
+      - - 67
+        - 0
+    full:
+      layers:
+      - - 67
+        - 0
+      component: straight_fba69bc3
+      default: 0
+      top: 3
+      bottom: 3
+  cells:
+    straight_fba69bc3_add_p_9369b7ba:
+      child:
+        length: 2
+        width: 0.5
+        name: straight_fba69bc3
+        module: gdsfactory.components.straight
+        function_name: straight
+        info_version: 1
+        changed:
+          length: 2
+        default:
+          length: 10
+          npoints: 2
+          with_cladding_box: true
+          cross_section:
+            function: cross_section
+        full:
+          length: 2
+          npoints: 2
+          with_cladding_box: true
+          cross_section:
+            function: cross_section
+      name: straight_fba69bc3_add_p_9369b7ba
+      module: gdsfactory.add_padding
+      function_name: add_padding_container
+      info_version: 1
+      changed:
+        component: straight_fba69bc3
+        default: 0
+        top: 3
+        bottom: 3
+      default:
+        layers:
+        - - 67
+          - 0
+      full:
+        layers:
+        - - 67
+          - 0
+        component: straight_fba69bc3
+        default: 0
+        top: 3
+        bottom: 3
+    straight_fba69bc3:
+      length: 2
+      width: 0.5
+      name: straight_fba69bc3
+      module: gdsfactory.components.straight
+      function_name: straight
+      info_version: 1
+      changed:
+        length: 2
+      default:
+        length: 10
+        npoints: 2
+        with_cladding_box: true
+        cross_section:
+          function: cross_section
+      full:
+        length: 2
+        npoints: 2
+        with_cladding_box: true
+        cross_section:
+          function: cross_section
+  version: 0.0.1

@@ -1,0 +1,189 @@
+simulation_settings:
+  background_material: sio2
+  port_margin: 1.5
+  port_extension: 5.0
+  mesh_accuracy: 2
+  zmargin: 1.0
+  ymargin: 3.0
+  xmargin: 3.0
+  wavelength_start: 1.2
+  wavelength_stop: 1.6
+  wavelength_points: 500
+  simulation_time: 1.0e-11
+  simulation_temperature: 300.0
+  frequency_dependent_profile: true
+  field_profile_samples: 15
+  mode_index: 0
+  n_modes: 2
+  thickness_pml: 1.0
+  port_source_name: o1
+  distance_source_to_monitors: 0.2
+  mesh_step: 0.04
+  wavelength: 1.55
+  layer_stack:
+    core:
+      layer:
+      - 1
+      - 0
+      thickness: 0.22
+      zmin: 0.0
+      material: si
+      sidewall_angle: 0.0
+    clad:
+      layer:
+      - 111
+      - 0
+      thickness: null
+      zmin: 0.0
+      material: sio2
+      sidewall_angle: 0.0
+    slab150:
+      layer:
+      - 2
+      - 0
+      thickness: 0.15
+      zmin: 0.0
+      material: si
+      sidewall_angle: 0.0
+    slab90:
+      layer:
+      - 3
+      - 0
+      thickness: 0.09
+      zmin: 0.0
+      material: si
+      sidewall_angle: 0.0
+    nitride:
+      layer:
+      - 34
+      - 0
+      thickness: 0.35
+      zmin: 0.32
+      material: sin
+      sidewall_angle: 0.0
+    ge:
+      layer:
+      - 5
+      - 0
+      thickness: 0.5
+      zmin: 0.22
+      material: ge
+      sidewall_angle: 0.0
+    via_contact:
+      layer:
+      - 40
+      - 0
+      thickness: 1.1
+      zmin: 0.09
+      material: Aluminum
+      sidewall_angle: 0.0
+    metal1:
+      layer:
+      - 41
+      - 0
+      thickness: 0.75
+      zmin: 1.32
+      material: Aluminum
+      sidewall_angle: 0.0
+    heater:
+      layer:
+      - 47
+      - 0
+      thickness: 0.75
+      zmin: 1.32
+      material: TiN
+      sidewall_angle: 0.0
+    viac:
+      layer:
+      - 44
+      - 0
+      thickness: 1.5
+      zmin: 2.0700000000000003
+      material: Aluminum
+      sidewall_angle: 0.0
+    metal2:
+      layer:
+      - 45
+      - 0
+      thickness: 2.0
+      zmin: 3.5700000000000003
+      material: Aluminum
+      sidewall_angle: 0.0
+component:
+  ports:
+    o1:
+      name: o1
+      midpoint:
+      - -4
+      - 0
+      width: 0.5
+      orientation: 180
+      layer:
+      - 1
+      - 0
+      port_type: optical
+    o2:
+      name: o2
+      midpoint:
+      - 2.4492935982947064e-16
+      - 4
+      width: 0.5
+      orientation: 90
+      layer:
+      - 1
+      - 0
+      port_type: optical
+    o3:
+      name: o3
+      midpoint:
+      - 4
+      - 0
+      width: 0.5
+      orientation: 0
+      layer:
+      - 1
+      - 0
+      port_type: optical
+    o4:
+      name: o4
+      midpoint:
+      - -2.4492935982947064e-16
+      - -4
+      width: 0.5
+      orientation: 270
+      layer:
+      - 1
+      - 0
+      port_type: optical
+  info:
+    name: crossing
+    module: gdsfactory.components.crossing_waveguide
+    function_name: crossing
+    info_version: 1
+    changed: {}
+    default:
+      arm:
+        function: crossing_arm
+    full:
+      arm:
+        function: crossing_arm
+  cells:
+    crossing:
+      name: crossing
+      module: gdsfactory.components.crossing_waveguide
+      function_name: crossing
+      info_version: 1
+      changed: {}
+      default:
+        arm:
+          function: crossing_arm
+      full:
+        arm:
+          function: crossing_arm
+  version: 0.0.1
+version: 4.0.12
+material_name_to_lumerical:
+  si: Si (Silicon) - Palik
+  sio2: SiO2 (Glass) - Palik
+  sin: Si3N4 (Silicon Nitride) - Phillip
+compute_time_seconds: 1251.6064457893372
