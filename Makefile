@@ -3,4 +3,4 @@ add:
 	git config --global user.name "Joaquin Matres"
 	git add .
 	git commit --amend -m "add data"
-	git push --force
+	gh repo sync --force
