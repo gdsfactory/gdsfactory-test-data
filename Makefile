@@ -3,5 +3,5 @@ add:
 	git config --global user.name "Joaquin Matres"
 	git add .
 	# git commit --amend -m "add data"
-	git commit -m "add data"
+	git commit -m "add data" | echo 'no commit'
 	gh repo sync
