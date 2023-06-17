@@ -858,5 +858,5 @@ grid_spec:
   wavelength: null
   override_structures: []
   type: GridSpec
-compute_time_seconds: 156.616
-compute_time_minutes: 2.61
+compute_time_seconds: 140.57
+compute_time_minutes: 2.343
