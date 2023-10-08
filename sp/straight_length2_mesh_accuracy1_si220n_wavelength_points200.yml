@@ -1,0 +1,107 @@
+component:
+  info: {}
+  name: straight_length2
+  settings: {}
+simulation_settings:
+  background_material: sio2
+  layer_stack:
+    clad:
+      layer: !!python/tuple
+      - 111
+      - 0
+      material: sio2
+      sidewall_angle: 0.0
+      thickness: null
+      zmin: 0.0
+    core:
+      layer: !!python/tuple
+      - 1
+      - 0
+      material: si
+      sidewall_angle: 0.0
+      thickness: 0.22
+      zmin: 0.0
+    ge:
+      layer: !!python/tuple
+      - 5
+      - 0
+      material: ge
+      sidewall_angle: 0.0
+      thickness: 0.5
+      zmin: 0.22
+    heater:
+      layer: !!python/tuple
+      - 47
+      - 0
+      material: TiN
+      sidewall_angle: 0.0
+      thickness: 0.75
+      zmin: 1.32
+    metal1:
+      layer: !!python/tuple
+      - 41
+      - 0
+      material: Aluminum
+      sidewall_angle: 0.0
+      thickness: 0.75
+      zmin: 1.32
+    metal2:
+      layer: !!python/tuple
+      - 45
+      - 0
+      material: Aluminum
+      sidewall_angle: 0.0
+      thickness: 2.0
+      zmin: 3.5700000000000003
+    nitride:
+      layer: !!python/tuple
+      - 34
+      - 0
+      material: sin
+      sidewall_angle: 0.0
+      thickness: 0.35
+      zmin: 0.32
+    slab150:
+      layer: !!python/tuple
+      - 2
+      - 0
+      material: si
+      sidewall_angle: 0.0
+      thickness: 0.15
+      zmin: 0.0
+    slab90:
+      layer: !!python/tuple
+      - 3
+      - 0
+      material: si
+      sidewall_angle: 0.0
+      thickness: 0.15
+      zmin: 0.0
+    via_contact:
+      layer: !!python/tuple
+      - 40
+      - 0
+      material: Aluminum
+      sidewall_angle: 0.0
+      thickness: 1.1
+      zmin: 0.09
+    viac:
+      layer: !!python/tuple
+      - 44
+      - 0
+      material: Aluminum
+      sidewall_angle: 0.0
+      thickness: 1.5
+      zmin: 2.0700000000000003
+  mesh_accuracy: 1
+  pml_margin: 0.5
+  port_extension: 2.0
+  port_height: 1.5
+  port_width: 3.0
+  wavelength_points: 200
+  wavelength_start: 1.2
+  wavelength_stop: 1.6
+  xmargin: 0.5
+  ymargin: 2.0
+  zmargin: 1.0
+version: 3.2.6

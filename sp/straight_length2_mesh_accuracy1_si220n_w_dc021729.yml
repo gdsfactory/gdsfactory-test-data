@@ -1,0 +1,107 @@
+simulation_settings:
+  background_material: sio2
+  port_width: 3.0
+  port_height: 1.5
+  port_extension: 2.0
+  mesh_accuracy: 1
+  zmargin: 1.0
+  ymargin: 2.0
+  xmargin: 0.5
+  pml_margin: 0.5
+  wavelength_start: 1.2
+  wavelength_stop: 1.6
+  wavelength_points: 200
+  layer_stack:
+    core:
+      layer:
+      - 1
+      - 0
+      thickness: 0.22
+      zmin: 0.0
+      material: si
+      sidewall_angle: 0.0
+    clad:
+      layer:
+      - 111
+      - 0
+      thickness: null
+      zmin: 0.0
+      material: sio2
+      sidewall_angle: 0.0
+    slab150:
+      layer:
+      - 2
+      - 0
+      thickness: 0.15
+      zmin: 0.0
+      material: si
+      sidewall_angle: 0.0
+    slab90:
+      layer:
+      - 3
+      - 0
+      thickness: 0.15
+      zmin: 0.0
+      material: si
+      sidewall_angle: 0.0
+    nitride:
+      layer:
+      - 34
+      - 0
+      thickness: 0.35
+      zmin: 0.32
+      material: sin
+      sidewall_angle: 0.0
+    ge:
+      layer:
+      - 5
+      - 0
+      thickness: 0.5
+      zmin: 0.22
+      material: ge
+      sidewall_angle: 0.0
+    via_contact:
+      layer:
+      - 40
+      - 0
+      thickness: 1.1
+      zmin: 0.09
+      material: Aluminum
+      sidewall_angle: 0.0
+    metal1:
+      layer:
+      - 41
+      - 0
+      thickness: 0.75
+      zmin: 1.32
+      material: Aluminum
+      sidewall_angle: 0.0
+    heater:
+      layer:
+      - 47
+      - 0
+      thickness: 0.75
+      zmin: 1.32
+      material: TiN
+      sidewall_angle: 0.0
+    viac:
+      layer:
+      - 44
+      - 0
+      thickness: 1.5
+      zmin: 2.0700000000000003
+      material: Aluminum
+      sidewall_angle: 0.0
+    metal2:
+      layer:
+      - 45
+      - 0
+      thickness: 2.0
+      zmin: 3.5700000000000003
+      material: Aluminum
+      sidewall_angle: 0.0
+component:
+  info: {}
+  name: straight_length2
+  settings: {}
+version: 3.2.6

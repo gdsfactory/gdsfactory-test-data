@@ -1,0 +1,191 @@
+resolution: 20
+port_symmetries:
+  o1:
+    s11:
+    - s22
+    - s33
+    - s44
+    s21:
+    - s12
+    - s34
+    - s43
+    s31:
+    - s13
+    - s24
+    - s42
+    s41:
+    - s14
+    - s23
+    - s32
+wl_min: 1.5
+wl_max: 1.6
+wl_steps: 50
+port_margin: 2
+port_monitor_offset: -0.1
+port_source_offset: -0.1
+dispersive: false
+ymargin_top: 0
+ymargin_bot: 0
+xmargin_left: 0
+xmargin_right: 0
+layer_stack:
+  core:
+    layer:
+    - 1
+    - 0
+    thickness: 0.22
+    zmin: 0.0
+    material: si
+    sidewall_angle: 0
+  clad:
+    layer:
+    - 111
+    - 0
+    thickness: null
+    zmin: 0.0
+    material: sio2
+    sidewall_angle: 0
+  slab150:
+    layer:
+    - 2
+    - 0
+    thickness: 0.15
+    zmin: 0.0
+    material: si
+    sidewall_angle: 0
+  slab90:
+    layer:
+    - 3
+    - 0
+    thickness: 0.09
+    zmin: 0.0
+    material: si
+    sidewall_angle: 0
+  nitride:
+    layer:
+    - 34
+    - 0
+    thickness: 0.35
+    zmin: 0.32
+    material: sin
+    sidewall_angle: 0
+  ge:
+    layer:
+    - 5
+    - 0
+    thickness: 0.5
+    zmin: 0.22
+    material: ge
+    sidewall_angle: 0
+  via_contact:
+    layer:
+    - 40
+    - 0
+    thickness: 1.1
+    zmin: 0.09
+    material: Aluminum
+    sidewall_angle: 0
+  metal1:
+    layer:
+    - 41
+    - 0
+    thickness: 0.75
+    zmin: 1.32
+    material: Aluminum
+    sidewall_angle: 0
+  heater:
+    layer:
+    - 47
+    - 0
+    thickness: 0.75
+    zmin: 1.32
+    material: TiN
+    sidewall_angle: 0
+  viac:
+    layer:
+    - 44
+    - 0
+    thickness: 1.5
+    zmin: 2.0700000000000003
+    material: Aluminum
+    sidewall_angle: 0
+  metal2:
+    layer:
+    - 45
+    - 0
+    thickness: 2.0
+    zmin: 3.5700000000000003
+    material: Aluminum
+    sidewall_angle: 0
+component:
+  ports:
+    o1:
+      name: o1
+      midpoint:
+      - -4
+      - 0
+      width: 0.5
+      orientation: 180
+      layer:
+      - 1
+      - 0
+      port_type: optical
+    o2:
+      name: o2
+      midpoint:
+      - 2.4492935982947064e-16
+      - 4
+      width: 0.5
+      orientation: 90
+      layer:
+      - 1
+      - 0
+      port_type: optical
+    o3:
+      name: o3
+      midpoint:
+      - 4
+      - 0
+      width: 0.5
+      orientation: 0
+      layer:
+      - 1
+      - 0
+      port_type: optical
+    o4:
+      name: o4
+      midpoint:
+      - -2.4492935982947064e-16
+      - -4
+      width: 0.5
+      orientation: 270
+      layer:
+      - 1
+      - 0
+      port_type: optical
+  info:
+    name: crossing
+    module: gdsfactory.components.crossing_waveguide
+    function_name: crossing
+    info_version: 1
+    changed: {}
+    default:
+      arm:
+        function: crossing_arm
+    full:
+      arm:
+        function: crossing_arm
+  cells:
+    crossing:
+      name: crossing
+      module: gdsfactory.components.crossing_waveguide
+      function_name: crossing
+      info_version: 1
+      changed: {}
+      default:
+        arm:
+          function: crossing_arm
+      full:
+        arm:
+          function: crossing_arm
+  version: 0.0.1

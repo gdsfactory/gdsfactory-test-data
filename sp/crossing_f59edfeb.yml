@@ -1,0 +1,159 @@
+resolution: 20
+port_symmetries:
+  o1@0,o1@0:
+  - o2@0,o2@0
+  - o3@0,o3@0
+  - o4@0,o4@0
+  o2@0,o1@0:
+  - o1@0,o2@0
+  - o3@0,o4@0
+  - o4@0,o3@0
+  o3@0,o1@0:
+  - o1@0,o3@0
+  - o2@0,o4@0
+  - o4@0,o2@0
+  o4@0,o1@0:
+  - o1@0,o4@0
+  - o2@0,o3@0
+  - o3@0,o2@0
+wavelength_start: 1.5
+wavelength_stop: 1.6
+wavelength_points: 50
+port_margin: 2
+port_monitor_offset: -0.1
+port_source_offset: -0.1
+dispersive: false
+ymargin_top: 0.0
+ymargin_bot: 0.0
+xmargin_left: 0
+xmargin_right: 0
+layer_stack:
+  core:
+    layer:
+    - 1
+    - 0
+    thickness: 0.22
+    zmin: 0.0
+    material: si
+    sidewall_angle: 0
+  clad:
+    layer:
+    - 111
+    - 0
+    thickness: 3.0
+    zmin: 0.0
+    material: sio2
+    sidewall_angle: 0
+  slab150:
+    layer:
+    - 2
+    - 0
+    thickness: 0.15
+    zmin: 0.0
+    material: si
+    sidewall_angle: 0
+  slab90:
+    layer:
+    - 3
+    - 0
+    thickness: 0.09
+    zmin: 0.0
+    material: si
+    sidewall_angle: 0
+  nitride:
+    layer:
+    - 34
+    - 0
+    thickness: 0.35000000000000003
+    zmin: 0.32
+    material: sin
+    sidewall_angle: 0
+  ge:
+    layer:
+    - 5
+    - 0
+    thickness: 0.5
+    zmin: 0.22
+    material: ge
+    sidewall_angle: 0
+  via_contact:
+    layer:
+    - 40
+    - 0
+    thickness: 1.01
+    zmin: 0.09
+    material: Aluminum
+    sidewall_angle: 0
+  metal1:
+    layer:
+    - 41
+    - 0
+    thickness: 0.7000000000000001
+    zmin: 1.1
+    material: Aluminum
+    sidewall_angle: 0
+  heater:
+    layer:
+    - 47
+    - 0
+    thickness: 0.75
+    zmin: 1.1
+    material: TiN
+    sidewall_angle: 0
+  via1:
+    layer:
+    - 44
+    - 0
+    thickness: 0.49999999999999956
+    zmin: 1.8000000000000003
+    material: Aluminum
+    sidewall_angle: 0
+  metal2:
+    layer:
+    - 45
+    - 0
+    thickness: 0.7000000000000001
+    zmin: 2.3
+    material: Aluminum
+    sidewall_angle: 0
+  via2:
+    layer:
+    - 43
+    - 0
+    thickness: 0.20000000000000018
+    zmin: 3.0
+    material: Aluminum
+    sidewall_angle: 0
+  metal3:
+    layer:
+    - 49
+    - 0
+    thickness: 2.0
+    zmin: 3.2
+    material: Aluminum
+    sidewall_angle: 0
+component:
+  name: crossing
+  settings:
+    name: crossing
+    module: gdsfactory.components.crossing_waveguide
+    function_name: crossing
+    info: {}
+    info_version: 2
+    full:
+      arm:
+        function: crossing_arm
+      cross_section: strip
+    changed: {}
+    default:
+      arm:
+        function: crossing_arm
+      cross_section: strip
+    child: null
+<<<<<<< HEAD
+compute_time_seconds: 50.130789041519165
+compute_time_minutes: 0.8355131506919861
+=======
+compute_time_seconds: 64.33813190460205
+compute_time_minutes: 1.0723021984100343
+>>>>>>> refs/remotes/github/data

@@ -1,0 +1,124 @@
+wavelength: 1.55
+temperature: 25.0
+num_modes: 4
+cell_length: 0.5
+spacing_x: 2.0
+center_x: 0
+resolution_x: 100
+spacing_y: 2.0
+center_y: 0
+resolution_y: 100
+layer_stack:
+  slab90:
+    layer:
+    - 3
+    - 0
+    thickness: 0.09
+    thickness_tolerance: null
+    zmin: 0.0
+    material: si
+    sidewall_angle: 0.0
+    width_to_z: 0.0
+    z_to_bias: null
+    mesh_order: 2
+    layer_type: grow
+    mode: null
+    into: null
+    doping_concentration: null
+    resistivity: null
+    bias: null
+    derived_layer: null
+    info: {}
+  core:
+    layer:
+    - 1
+    - 0
+    thickness: 0.22
+    thickness_tolerance: null
+    zmin: 0.0
+    material: si
+    sidewall_angle: 10.0
+    width_to_z: 0.5
+    z_to_bias: null
+    mesh_order: 2
+    layer_type: grow
+    mode: null
+    into: null
+    doping_concentration: null
+    resistivity: null
+    bias: null
+    derived_layer: null
+    info: {}
+  box:
+    layer:
+    - 10000
+    - 0
+    thickness: 3.0
+    thickness_tolerance: null
+    zmin: -3.0
+    material: sio2
+    sidewall_angle: 0.0
+    width_to_z: 0.0
+    z_to_bias: null
+    mesh_order: 99
+    layer_type: grow
+    mode: null
+    into: null
+    doping_concentration: null
+    resistivity: null
+    bias: null
+    derived_layer: null
+    info: {}
+  clad:
+    layer:
+    - 10001
+    - 0
+    thickness: 3.0
+    thickness_tolerance: null
+    zmin: 0.0
+    material: sio2
+    sidewall_angle: 0.0
+    width_to_z: 0.0
+    z_to_bias: null
+    mesh_order: 10
+    layer_type: grow
+    mode: null
+    into: null
+    doping_concentration: null
+    resistivity: null
+    bias: null
+    derived_layer: null
+    info: {}
+component:
+  name: taper_length5_width210
+  settings:
+    name: taper_length5_width210
+    module: gdsfactory.components.taper
+    function_name: taper
+    info:
+      length: 5.0
+      width1: 0.5
+      width2: 10.0
+    info_version: 2
+    full:
+      length: 5
+      width1: 0.5
+      width2: 10
+      port: null
+      with_bbox: true
+      with_two_ports: true
+      cross_section: strip
+    changed:
+      length: 5
+      width2: 10
+    default:
+      length: 10.0
+      width1: 0.5
+      width2: null
+      port: null
+      with_bbox: true
+      with_two_ports: true
+      cross_section: strip
+    child: null
+compute_time_seconds: 35.675848722457886
+compute_time_minutes: 0.5945974787076315

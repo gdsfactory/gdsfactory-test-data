@@ -1,0 +1,190 @@
+simulation_settings:
+  background_material: sio2
+  port_margin: 1.5
+  port_extension: 5.0
+  mesh_accuracy: 2
+  zmargin: 1.0
+  ymargin: 3.0
+  xmargin: 3.0
+  wavelength_start: 1.2
+  wavelength_stop: 1.6
+  wavelength_points: 500
+  simulation_time: 1.0e-11
+  simulation_temperature: 300
+  frequency_dependent_profile: true
+  field_profile_samples: 15
+  distance_source_to_monitors: 0.2
+  material_name_to_lumerical:
+    si: Si (Silicon) - Palik
+    sio2: SiO2 (Glass) - Palik
+    sin: Si3N4 (Silicon Nitride) - Phillip
+  layer_stack:
+    core:
+      layer:
+      - 1
+      - 0
+      thickness: 0.22
+      zmin: 0.0
+      material: si
+      sidewall_angle: 0
+      info:
+        mesh_order: 1
+    clad:
+      layer:
+      - 111
+      - 0
+      thickness: 3.0
+      zmin: 0.0
+      material: sio2
+      sidewall_angle: 0
+      info:
+        mesh_order: 10
+    slab150:
+      layer:
+      - 2
+      - 0
+      thickness: 0.15
+      zmin: 0.0
+      material: si
+      sidewall_angle: 0
+      info:
+        mesh_order: 3
+    slab90:
+      layer:
+      - 3
+      - 0
+      thickness: 0.09
+      zmin: 0.0
+      material: si
+      sidewall_angle: 0
+      info:
+        mesh_order: 2
+    nitride:
+      layer:
+      - 34
+      - 0
+      thickness: 0.35000000000000003
+      zmin: 0.32
+      material: sin
+      sidewall_angle: 0
+      info:
+        mesh_order: 2
+    ge:
+      layer:
+      - 5
+      - 0
+      thickness: 0.5
+      zmin: 0.22
+      material: ge
+      sidewall_angle: 0
+      info:
+        mesh_order: 1
+    via_contact:
+      layer:
+      - 40
+      - 0
+      thickness: 1.01
+      zmin: 0.09
+      material: Aluminum
+      sidewall_angle: 0
+      info:
+        mesh_order: 1
+    metal1:
+      layer:
+      - 41
+      - 0
+      thickness: 0.7000000000000001
+      zmin: 1.1
+      material: Aluminum
+      sidewall_angle: 0
+      info:
+        mesh_order: 2
+    heater:
+      layer:
+      - 47
+      - 0
+      thickness: 0.75
+      zmin: 1.1
+      material: TiN
+      sidewall_angle: 0
+      info:
+        mesh_order: 1
+    via1:
+      layer:
+      - 44
+      - 0
+      thickness: 0.49999999999999956
+      zmin: 1.8000000000000003
+      material: Aluminum
+      sidewall_angle: 0
+      info:
+        mesh_order: 2
+    metal2:
+      layer:
+      - 45
+      - 0
+      thickness: 0.7000000000000001
+      zmin: 2.3
+      material: Aluminum
+      sidewall_angle: 0
+      info:
+        mesh_order: 2
+    via2:
+      layer:
+      - 43
+      - 0
+      thickness: 0.20000000000000018
+      zmin: 3.0
+      material: Aluminum
+      sidewall_angle: 0
+      info:
+        mesh_order: 1
+    metal3:
+      layer:
+      - 49
+      - 0
+      thickness: 2.0
+      zmin: 3.2
+      material: Aluminum
+      sidewall_angle: 0
+      info:
+        mesh_order: 2
+component:
+  name: mmi2x2
+  settings:
+    name: mmi2x2
+    module: gdsfactory.components.mmi2x2
+    function_name: mmi2x2
+    info: {}
+    info_version: 2
+    full:
+      width: 0.5
+      width_taper: 1.0
+      length_taper: 10.0
+      length_mmi: 5.5
+      width_mmi: 2.5
+      gap_mmi: 0.25
+      taper:
+        function: taper
+      straight:
+        function: straight
+      with_bbox: true
+      cross_section: strip
+    changed: {}
+    default:
+      width: 0.5
+      width_taper: 1.0
+      length_taper: 10.0
+      length_mmi: 5.5
+      width_mmi: 2.5
+      gap_mmi: 0.25
+      taper:
+        function: taper
+      straight:
+        function: straight
+      with_bbox: true
+      cross_section: strip
+    child: null
+version: 5.55.0
+compute_time_seconds: 1502.8943388462067
+compute_time_minutes: 25.048238980770112
